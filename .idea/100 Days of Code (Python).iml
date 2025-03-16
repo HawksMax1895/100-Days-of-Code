@@ -3,6 +3,16 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/Day 15/venv/Lib" />
+      <excludeFolder url="file://$MODULE_DIR$/Day 15/venv/Scripts" />
+      <excludeFolder url="file://$MODULE_DIR$/Day 16 - Coffee Machine/venv/Lib" />
+      <excludeFolder url="file://$MODULE_DIR$/Day 16 - Coffee Machine/venv/Scripts" />
+      <excludeFolder url="file://$MODULE_DIR$/Day 16/venv/Lib" />
+      <excludeFolder url="file://$MODULE_DIR$/Day 16/venv/Scripts" />
+      <excludeFolder url="file://$MODULE_DIR$/Day 17 - Quiz/venv/Lib" />
+      <excludeFolder url="file://$MODULE_DIR$/Day 17 - Quiz/venv/Scripts" />
+      <excludeFolder url="file://$MODULE_DIR$/Day 17/venv/Lib" />
+      <excludeFolder url="file://$MODULE_DIR$/Day 17/venv/Scripts" />
     </content>
     <orderEntry type="jdk" jdkName="uv (100_days_of_code)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
