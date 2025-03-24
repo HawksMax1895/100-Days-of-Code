@@ -23,8 +23,8 @@ for entry in forecast:
 
         message = client.messages.create(
             body="It's going to rain today. Remember to bring an umbrella today",
-            from_=os.environ.get("FROM_NUMBER"),
-            to=os.environ.get("TO_NUMBER"),
+            from_=os.environ.get("+12315946472"),
+            to=os.environ.get("+4917645999428"),
         )
 
         print(message.body)
