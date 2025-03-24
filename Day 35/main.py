@@ -2,11 +2,13 @@ import requests
 import os
 from twilio.rest import Client
 
-api_key = "MY API KEY"
+api_key = os.environ.get("OWM_API_KEY")
+account_sid = os.environ.get("TWILIO_ACCOUNT_SID")
+auth_token = os.environ.get("TWILIO_AUTH_TOKEN")
+
 lat = 50.76693006338142
 lon = 6.094452156110828
-account_sid = "ACCOUNT SID"
-auth_token = "AUTH TOKEN"
+print(api_key)
 
 weather = requests.get("https://api.openweathermap.org/data/2.5/forecast", params={'lat': lat, 'lon': lon, 'cnt': 4, 'appid': api_key})
 weather.raise_for_status()
@@ -21,8 +23,8 @@ for entry in forecast:
 
         message = client.messages.create(
             body="It's going to rain today. Remember to bring an umbrella today",
-            from_="+MY TWILIO PHONE NUMBER",
-            to="+MY PHONE NUMBER",
+            from_=os.environ.get("FROM_NUMBER"),
+            to=os.environ.get("TO_NUMBER"),
         )
 
         print(message.body)
