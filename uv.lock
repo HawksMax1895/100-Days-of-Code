@@ -16,6 +16,7 @@ dependencies = [
     { name = "pandas" },
     { name = "prettytable" },
     { name = "pyperclip" },
+    { name = "python-dotenv" },
     { name = "requests" },
     { name = "twilio" },
 ]
@@ -27,6 +28,7 @@ requires-dist = [
     { name = "pandas", specifier = ">=2.2.3" },
     { name = "prettytable", specifier = ">=3.15.1" },
     { name = "pyperclip", specifier = ">=1.9.0" },
+    { name = "python-dotenv", specifier = ">=1.0.1" },
     { name = "requests", specifier = ">=2.32.3" },
     { name = "twilio", specifier = ">=9.5.1" },
 ]
