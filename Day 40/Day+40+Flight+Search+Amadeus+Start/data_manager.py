@@ -5,22 +5,19 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-SHEETY_ENDPOINT=os.environ.get("SHEETY_URL")
-SHEETY_TOKEN= os.environ.get("SHEETY_TOKEN")
-
-headers = {
-    "Authorization": f"Bearer {SHEETY_TOKEN}"
-}
-
-
 class DataManager:
 
     def __init__(self):
+        self.prices_endpoint = os.environ.get("SHEETY_URL")
+        self.users_endpoint = os.environ.get("SHEETY_USER_URL")
+        self.token = SHEETY_TOKEN= os.environ.get("SHEETY_TOKEN")
         self.destination_data = {}
+        self.customer_data ={}
+        self.header ={"Authorization": f"Bearer {SHEETY_TOKEN}"}
 
     def get_destination_data(self):
         # Use the Sheety API to GET all the data in that sheet and print it out.
-        response = requests.get(url=SHEETY_ENDPOINT, headers=headers)
+        response = requests.get(url=self.prices_endpoint, headers=self.header)
         data = response.json()
         self.destination_data = data["prices"]
         # Try importing pretty print and printing the data out again using pprint() to see it formatted.
@@ -36,5 +33,10 @@ class DataManager:
                     "iataCode": city["iataCode"]
                 }
             }
-            response = requests.put(url=f"{SHEETY_ENDPOINT}/{city['id']}", json=new_data, headers=headers)
+            response = requests.put(url=f"{self.prices_endpoint}/{city['id']}", json=new_data, headers=self.header)
             print(response.text)
+
+    def get_customer_email(self):
+        response = requests.get(url=self.users_endpoint, headers=self.header)
+        self.customer_data = response.json()["users"]
+        return self.customer_data
