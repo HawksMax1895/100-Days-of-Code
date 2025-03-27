@@ -1,93 +1,156 @@
-# 100 Days of Code
+# 100 Days of Code: Python Bootcamp
 
+Welcome! This repository contains my solutions, notes, and project files from the Udemy course [100 Days of Code: The Complete Python Pro Bootcamp for 2023](https://www.udemy.com/course/100-days-of-code/). This course covers Python fundamentals, data structures, object-oriented programming, GUI development, web scraping, and more—providing a comprehensive hands-on experience.
 
+## Table of Contents
 
-## Getting started
+- [Overview](#overview)
+- [Course Structure](#course-structure)
+- [Project List](#project-list)
+- [Prerequisites](#prerequisites)
+- [How to Use](#how-to-use)
+- [Dependencies](#dependencies)
+- [Contributions](#contributions)
+- [License](#license)
+- [Contact](#contact)
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+---
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+## Overview
 
-## Add your files
+- **Course:** 100 Days of Code: The Complete Python Pro Bootcamp for 2023  
+- **Instructor:** Dr. Angela Yu  
+- **Platform:** [Udemy](https://www.udemy.com/)  
+- **Goal:** To learn Python from basics to advanced topics through daily coding challenges and real-world projects.
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
+This repo holds my personal solutions to the assignments and challenges, along with any additional notes or files I created while progressing through each day of the course.
 
+## Course Structure
+
+The course is broken down into 100 days (or modules) of lessons and projects. Each day covers specific topics, including but not limited to:
+
+1. **Python Basics** (variables, data types, strings, conditionals, loops)  
+2. **Data Structures** (lists, dictionaries, tuples)  
+3. **Functions & Modules**  
+4. **Object-Oriented Programming** (classes, objects, inheritance)  
+5. **File Handling**  
+6. **GUI Development** (Tkinter)  
+7. **Web Scraping** (Beautiful Soup, Selenium)  
+8. **Data Science** (Pandas, NumPy, Matplotlib)  
+9. **API Interactions** (REST, JSON)  
+10. **Automation Projects**  
+11. **Game Development** (Turtle, PyGame)  
+12. **Web Development** (Flask, Django Basics)  
+13. **Database Integration** (SQLite, SQLAlchemy)  
+14. **Deployment**
+
+In this repository, you will find a folder for each day (`day_01`, `day_02`, etc.), which includes:
+
+- **Code**: Python scripts or notebooks  
+- **ReadMe/Notes**: Additional documentation or learning notes  
+- **Project Files**: Assets or data relevant to the day’s project  
+
+## Project List
+
+Below is a short list of some of the main projects in this course:
+
+- **Tip Calculator** – Simple arithmetic and user input project  
+- **Band Name Generator** – First coding exercise that practices string manipulation  
+- **Treasure Island** – Basic text-based adventure game  
+- **Rock-Paper-Scissors** – Classic game focusing on conditionals  
+- **Coffee Machine** – OOP project simulating a coffee machine  
+- **Pong Game** – A classic arcade game built using Turtle graphics  
+- **Snake Game** – Another fun Turtle-based arcade game  
+- **Flight Deal Finder** – Web scraping and automation project  
+- **Rain Alert** – A project leveraging APIs to send weather alerts  
+- **Blog with Flask** – Basic blog website using Flask and Jinja templates  
+
+*(These are just some highlights. The full repository contains daily exercises and additional smaller projects.)*
+
+## Prerequisites
+
+- **Python** (>=3.11 recommended)  
+- **Git** (to clone this repository)
+- **pip** (Python package installer)
+
+## How to Use
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://gitlab.com/your-username/100-days-of-code-python.git
+   ```
+
+2. **Navigate to a Day’s Folder**
+   ```bash
+   cd 100-days-of-code-python/day_01
+   ```
+
+3. **Run the Python Scripts**
+   ```bash
+   python main.py
+   ```
+
+> Some days may have multiple files or Jupyter notebooks. Read through the `README.md` or `notes.md` within that day’s folder to see how to run each project.  
+> Be sure to check the top of each file for instructions or comments, as some projects may require additional setup.
+
+## Dependencies
+
+To install the required Python packages, run:
+
+```bash
+pip install -r requirements.txt
 ```
-cd existing_repo
-git remote add origin https://gitlab.com/maxradmacher/100-days-of-code.git
-git branch -M main
-git push -uf origin main
+
+Or, if you're using `uv`:
+
+```bash
+uv pip install
 ```
 
-## Integrate with your tools
+### Main Packages Used
 
-- [ ] [Set up project integrations](https://gitlab.com/maxradmacher/100-days-of-code/-/settings/integrations)
+- `bs4` – HTML parsing and web scraping  
+- `colorgram-py` – Extracting colors from images  
+- `dotenv` / `python-dotenv` – Managing environment variables  
+- `pandas` – Data analysis and manipulation  
+- `prettytable` – Console tables  
+- `pyperclip` – Clipboard handling  
+- `requests` – HTTP requests  
+- `spotipy` – Spotify API wrapper  
+- `twilio` – SMS and voice messaging  
 
-## Collaborate with your team
+## Contributions
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
+This repository primarily serves as my personal study log and reference. However, you are welcome to:
 
-## Test and Deploy
+- Open an issue if you spot a bug or have a suggestion  
+- Fork the project and create a merge request with improvements or additional features  
 
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+I appreciate any feedback or contributions that help make the code more robust, readable, or efficient!
 
 ## License
-For open source projects, say how it is licensed.
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Unless otherwise stated, this project is licensed under the **MIT License**. Feel free to use the code as you wish, but keep in mind that this repository reflects my personal solutions and learning process.
+
+```
+MIT License  
+Copyright (c) 2025 Max Radmacher
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software")...
+```
+
+## Contact
+
+If you have any questions or want to connect:
+
+- **GitLab:** [radimax](https://gitlab.com/radimax)  
+- **Email:** maxradmacher@gmail.com
+- **LinkedIn:** [Max Radmacher](https://www.linkedin.com/in/max-radmacher/)
+
+Happy Coding! 🚀
+
+---
+
+_This repository is for educational purposes and follows the course outline provided by [Udemy](https://www.udemy.com/) and [Dr. Angela Yu](https://www.udemy.com/user/angela-yu/)._  
+_Thanks for visiting and feel free to explore, learn, and contribute!_
