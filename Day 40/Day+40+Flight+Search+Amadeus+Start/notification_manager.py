@@ -1,5 +1,6 @@
 import os
 from twilio.rest import Client
+import smtplib
 
 # Using a .env file to retrieve the phone numbers and tokens.
 
@@ -7,6 +8,8 @@ class NotificationManager:
 
     def __init__(self):
         self.client = Client(os.environ['TWILIO_SID'], os.environ["TWILIO_AUTH_TOKEN"])
+        self.email = os.environ.get("EMAIL")
+        self.password = os.environ.get("PASSWORD")
 
     def send_sms(self, message_body):
         """
@@ -47,3 +50,10 @@ class NotificationManager:
             to=f'whatsapp:{os.environ["TWILIO_VERIFIED_NUMBER"]}'
         )
         print(message.sid)
+
+
+    def send_emails(self, recipient, message):
+        with smtplib.SMTP("smtp.gmail.com") as connection:
+            connection.starttls()
+            connection.login(user=self.email, password=self.password)
+            connection.sendmail(from_addr=self.email, to_addrs=recipient, msg=f"Subject: Flight Deal\n\n{message}")
