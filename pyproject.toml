@@ -13,6 +13,7 @@ dependencies = [
     "pyperclip>=1.9.0",
     "python-dotenv>=1.0.1",
     "requests>=2.32.3",
+    "selenium>=4.30.0",
     "spotipy>=2.25.1",
     "twilio>=9.5.1",
 ]
