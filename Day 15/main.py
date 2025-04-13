@@ -32,7 +32,7 @@ resources = {
 }
 
 
-# TODO Print report
+
 def print_report(water, milk, coffee, coins):
     print(f"Water: {water}ml")
     print(f"Milk: {milk}ml")
@@ -40,7 +40,6 @@ def print_report(water, milk, coffee, coins):
     print(f"coins: ${coins}")
 
 
-# TODO Check resources sufficient
 def check_resources(chosen_ingredients):
     for item in chosen_ingredients:
         if chosen_ingredients[item] > resources[item]:
@@ -49,7 +48,6 @@ def check_resources(chosen_ingredients):
     return True
 
 
-# TODO Process coins
 def process_coins():
     print("Please insert coins.")
     total = int(input("How many quarters? ")) * 0.25
@@ -59,7 +57,6 @@ def process_coins():
     return total
 
 
-# TODO Check transaction successful
 def transaction_successful(money, cost):
     if money > cost:
         change = round(money - cost, 2)
@@ -72,7 +69,6 @@ def transaction_successful(money, cost):
         return False
 
 
-# TODO Make coffee
 def make_coffee(drink, ingredients):
     for item in ingredients:
         resources[item] -= ingredients[item]
