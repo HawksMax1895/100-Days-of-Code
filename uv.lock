@@ -22,6 +22,7 @@ dependencies = [
     { name = "dotenv" },
     { name = "email-validator" },
     { name = "flask" },
+    { name = "flask-ckeditor" },
     { name = "flask-sqlalchemy" },
     { name = "flask-wtf" },
     { name = "greenlet" },
@@ -58,6 +59,7 @@ requires-dist = [
     { name = "dotenv", specifier = ">=0.9.9" },
     { name = "email-validator", specifier = ">=2.2.0" },
     { name = "flask", specifier = "==3.1.0" },
+    { name = "flask-ckeditor", specifier = "==1.0.0" },
     { name = "flask-sqlalchemy", specifier = "==3.1.1" },
     { name = "flask-wtf", specifier = "==1.2.2" },
     { name = "greenlet", specifier = "==3.1.1" },
@@ -398,6 +400,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/89/50/dff6380f1c7f84135484e176e0cac8690af72fa90e932ad2a0a60e28c69b/flask-3.1.0.tar.gz", hash = "sha256:5f873c5184c897c8d9d1b05df1e3d01b14910ce69607a117bd3277098a5836ac", size = 680824 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/af/47/93213ee66ef8fae3b93b3e29206f6b251e65c97bd91d8e1c5596ef15af0a/flask-3.1.0-py3-none-any.whl", hash = "sha256:d667207822eb83f1c4b50949b1623c8fc8d51f2341d65f72e1a1815397551136", size = 102979 },
+]
+
+[[package]]
+name = "flask-ckeditor"
+version = "1.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "flask" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a6/c9/d7559169bfc76c29054e1a4a4f1c49c034c1ba931181e48bb6af7ed87e7a/flask_ckeditor-1.0.0.tar.gz", hash = "sha256:e1737ca180ea0d46d53226f888f4786589f2e8ed810694aaff2aa68dfad15a98", size = 3387711 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/32/80/961516d05ffaf17c32aa595d30cdf7287a218d2ff60f212a09de512ffb19/Flask_CKEditor-1.0.0-py2.py3-none-any.whl", hash = "sha256:1a4aa871b510100df7bb8401b71cdcddfe1fd6d860649bc3760d0d43df485d72", size = 4581046 },
 ]
 
 [[package]]
