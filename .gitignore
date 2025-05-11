@@ -8,15 +8,7 @@ wheels/
 
 #.env
 **/.env*
-Day 35/.env
-Day 36/stock-news-extrahard-start/stock-news-extrahard-start/.env
-Day 37/.env
-Day 38/.env
-Day 39/flight-deals-start/flight-deals-start/.env
-Day 40/Day+40+Flight+Search+Amadeus+Start/.env
-
 
 # Virtual environments
 .venv
-".env" 
-".env" 
+".env"
