@@ -44,6 +44,7 @@ dependencies = [
     "selenium>=4.30.0",
     "spotipy>=2.25.1",
     "sqlalchemy==2.0.36",
+    "statsmodels>=0.14.4",
     "twilio>=9.5.1",
     "typing-extensions==4.12.2",
     "undetected-chromedriver>=3.5.5",
